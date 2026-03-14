@@ -1,0 +1,10 @@
+body {
+    width: 1920px;
+    height: 2500px;
+}
+
+header {
+    height: 72px;
+    background-color: #FFF;
+    border: 2px solid #E2E8F0;
+}
