@@ -1,9 +1,450 @@
-.paragraph {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: burlywood;
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 1920x;
+    font-family: "Segoe UI", "Segoe UI Web", "Segoe UI Symbol", 
+                 -apple-system, BlinkMacSystemFont, Roboto, 
+                 "Helvetica Neue", sans-serif;
+
 }
 
-#item1 {
-    color: red;
+header {
+    box-sizing: border-box;
+    padding: 16px 24px;
+    display: flex;
+    background: white;
+    height: 72px;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #E2E8F0;
+}
+
+.header_main_inner {
+    font-weight: 700;
+    width: 280px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.header_inner_nav {
+    gap: 20px;
+    padding: 4px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.hero {
+    box-sizing: border-box;
+    display: flex;
+    background: linear-gradient(to bottom right, #F8FAFC, #F1F5F9);
+    height: 600px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    justify-content: space-around;
+}
+
+.hero_left_column {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    width: 696px;
+    justify-content: left;
+}
+
+.hero_right_column {
+    width: 611px;
+    height: 436px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.hero_main_text {
+    width: 468px;
+}
+
+.hero_left_column_main_text {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero_left_column_main_text_description {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2563EB;
+}
+
+.hero_left_column_description {
     font-size: 20px;
+    font-family: "Segoe UI", "Segoe UI Web", "Segoe UI Symbol", 
+                 -apple-system, BlinkMacSystemFont, Roboto, 
+                 "Helvetica Neue", sans-serif;
+    color: #475569;
+    
+}
+
+
+ .hero_left_column_buttons {
+    display: flex;
+    gap: 10px;
+ }
+
+.get_in_touch_button {
+    width: 150px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #2563EB;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+}
+
+.view_work_button {
+    width: 150px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px solid #475569;
+    border-radius: 8px;
+}
+
+
+
+.hero_square {
+    border-radius: 12px;
+    background: linear-gradient(to bottom right, #3B82F6, #06B6D4);
+    width: 288px;
+    height: 288px;
+    position: relative;
+    overflow: visible;
+}
+
+.hero_svg_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.overlay_block {
+  gap: 5px;
+  position: absolute;
+  top: 250px;
+  right: -15px;
+  width: 160px;
+  height: 46px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.green_circle {
+  width: 12px;
+  height: 12px;
+  background-color: #22C55E;
+  border-radius: 50%;
+}
+
+.technical_expertise {
+    padding: 80px 32px;
+    gap: 40px;
+    box-sizing: border-box;
+    display: flex;
+    height: 500px;
+    background-color: white;
+    align-items: center;
+    flex-direction: column;
+}
+
+.technical_expertise_text {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.technical_expertise_blocks {
+    padding: 10px 0;
+    gap: 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tecnical_expertise_card_text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tecnical_expertise_card_text_inner {
+    font-size: 16px;
+    color: #475569
+}
+
+.technical_expertise_block {
+    gap: 10px;
+    box-sizing: border-box;
+    width: 274px;
+    height: 215px;
+    background-color: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 14px 20px;
+}
+
+.experience {
+    box-sizing: border-box;
+    display: flex;
+    background: linear-gradient(to bottom right, #F8FAFC, #F1F5F9);
+    height: 650px;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 24px;
+    gap: 10px;
+}
+
+.experience_text {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.experience_blocks {
+    width: 1408px;
+    height: 451px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 12px;
+    background-color: transparent;
+}
+
+.experience_block {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 16px 15px;
+    gap: 5px;
+    width: 1394px;
+    height: 200px;
+    background-color: white;
+    border-radius: 12px;
+    
+}
+
+.experience_title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.experience_company {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2563EB;
+}
+
+.experience_achievements {
+    display: flex;
+    align-items: center;;
+    gap: 10px;
+}
+
+.experience_ellipse {
+    width: 6px;
+    height: 6px;
+    background-color: #2563EB;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.experience_achievement {
+    
+    font-size: 16px;
+    color: #475569;
+
+}
+
+.contacts {
+    box-sizing: border-box;
+    padding: 80px 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    gap: 10px;
+    background-color: white;
+}
+
+.main_contacts_text {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.secondary_contacts_text {
+    font-size: 22px;
+
+}
+
+.contacts_buttons {
+    width: 510px;
+    height: 96px;
+    padding: 26px 17px;
+    gap: 32px;
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: row;
+}
+
+.contact_button_text {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact_button {
+    height: 44px;
+    background-color: transparent;
+    border-radius: 12px;
+    border: 1px solid #E2E8F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 14px;
+    gap: 13px;
+
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E293B;
+    height: 72px;
+}
+
+.footer_text {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* styles for featured projects */
+
+.featured_projects {
+    box-sizing: border-box;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 24px;
+    gap: 24px;
+}
+
+.featured_projects_main_text {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.featured_projects_content {
+    display: flex;
+    padding: 10px;
+    gap: 84px;
+}
+
+.featured_project_card {
+    width: 380px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #E2E8F0;
+}
+
+.featured_project_card_background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 200px;
+}
+
+.background--blue {
+    background: linear-gradient(to bottom right, #3B82F6, #06B6D4);
+}
+
+.background--green {
+    background: linear-gradient(to bottom right, #10B981, #14B8A6);
+}
+
+.background--purple {
+    background: linear-gradient(to bottom right, #8B5CF6, #A855F7);
+}
+
+.featured_project_card_content {
+    box-sizing: border-box;
+    width: 380px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 24px 8px;
+    background-color: #F8FAFC;
+    gap: 16px;
+}
+
+.featured_project_card_content_main_text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.featured_project_card_content_secondary_text {
+    font-size: 18px;
+    color: #475569;
+}
+
+.featured_project_card_content_technologies {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    gap: 10px;
+}
+
+.featured_project_card_content_technology {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 24px;
+    background: #DBEAFE;
+    color: #1D4ED8;
+    font-size: 12px;
+    border-radius: 12px;
+}
+
+
+.featured_project_card_content_view_project {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    color: #2563EB;
+    font-weight: 600;
 }
