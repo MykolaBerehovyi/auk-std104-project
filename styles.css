@@ -1,6 +1,7 @@
 body {
     padding: 0px;
     margin: 0px;
+    height: 3000px;
     width: 1920x;
     font-family: "Segoe UI", "Segoe UI Web", "Segoe UI Symbol", 
                  -apple-system, BlinkMacSystemFont, Roboto, 
@@ -447,4 +448,54 @@ footer {
     align-items: center;
     color: #2563EB;
     font-weight: 600;
+}
+
+/* Styles For About me Page */
+
+.about_me {
+    height: 673px;
+    background: linear-gradient(to bottom right, #F8FAFC, #F1F5F9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 24px;
+    gap: 24px;
+}
+
+.about_me_text {
+    font-size: 36px;
+    font-weight: 700;
+
+}
+
+.about_me_content {
+    display: flex;
+    gap: 24px;
+    width: 1280px;
+    height: 520px;
+}
+
+.about_me_content_description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 875px;
+    height: 418px;
+}
+
+.about_me_content_description_name {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.about_me_content_description_job_title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2563EB;
+}
+
+.about_me_content_description_about {
+    font-size: 24px;
+    font-weight: 600;
+    color: #475569;
 }
