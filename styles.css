@@ -452,7 +452,7 @@ footer {
 /* Styles For About me Page */
 
 .about_me {
-    height: 673px;
+    height: 433px;
     background: linear-gradient(to bottom right, #F8FAFC, #F1F5F9);
     display: flex;
     flex-direction: column;
