@@ -1,7 +1,7 @@
 body {
     padding: 0px;
     margin: 0px;
-    width: 1920x;
+    width: 100%;
     font-family: "Segoe UI", "Segoe UI Web", "Segoe UI Symbol", 
                  -apple-system, BlinkMacSystemFont, Roboto, 
                  "Helvetica Neue", sans-serif;
@@ -497,4 +497,350 @@ footer {
     font-size: 24px;
     font-weight: 600;
     color: #475569;
+}
+
+/* Hamburger Menu Styles */
+.mobile_menu_toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+}
+
+.mobile_menu_toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #2563EB;
+    margin: 5px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.mobile_menu_toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.mobile_menu_toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile_menu_toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Mobile Responsive Styles */
+
+/* Tablet and Mobile */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 12px 16px;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+    
+    .header_main_inner {
+        width: auto;
+        justify-content: flex-start;
+    }
+    
+    .mobile_menu_toggle {
+        display: block;
+    }
+    
+    .header_nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        border: 2px solid #E2E8F0;
+        border-top: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        z-index: 1000;
+    }
+    
+    .header_nav.active {
+        max-height: 200px;
+    }
+    
+    .header_inner_nav {
+        width: 100%;
+        justify-content: center;
+        padding: 16px 0;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .header_inner_elements {
+        font-size: 16px;
+        padding: 8px 16px;
+        text-align: center;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+    }
+    
+    .header_inner_elements:hover {
+        background-color: #F8FAFC;
+    }
+    
+    /* Hero Section */
+    .hero {
+        height: auto;
+        padding: 40px 16px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .hero_left_column {
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .hero_main_text {
+        width: 100%;
+    }
+    
+    .hero_left_column_main_text,
+    .hero_left_column_main_text_description {
+        font-size: 32px;
+    }
+    
+    .hero_left_column_description {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .hero_right_column {
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+    }
+    
+    .hero_square {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .overlay_block {
+        top: 170px;
+        right: 50%;
+        transform: translateX(50%);
+        width: 140px;
+        font-size: 13px;
+    }
+    
+    .hero_left_column_buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .get_in_touch_button,
+    .view_work_button {
+        width: 100%;
+    }
+    
+    /* Technical Expertise */
+    .technical_expertise {
+        padding: 40px 16px;
+        height: auto;
+    }
+    
+    .technical_expertise_text {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .technical_expertise_blocks {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    
+    .technical_expertise_block {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        min-height: 180px;
+    }
+    
+    /* Experience */
+    .experience {
+        padding: 40px 16px;
+        height: auto;
+    }
+    
+    .experience_text {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .experience_blocks {
+        width: 100%;
+        height: auto;
+        padding: 16px 8px;
+    }
+    
+    .experience_block {
+        width: 100%;
+        height: auto;
+        padding: 16px;
+    }
+    
+    /* Contacts */
+    .contacts {
+        padding: 40px 16px;
+        height: auto;
+    }
+    
+    .main_contacts_text {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .secondary_contacts_text {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .contacts_buttons {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+    
+    .contact_button {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    /* Featured Projects */
+    .featured_projects {
+        padding: 40px 16px;
+        height: auto;
+    }
+    
+    .featured_projects_main_text {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .featured_projects_content {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+    
+    .featured_project_card {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+    
+    .featured_project_card_background {
+        width: 100%;
+        height: 150px;
+    }
+    
+    .featured_project_card_content {
+        width: 100%;
+        height: auto;
+        padding: 16px;
+    }
+    
+    .featured_project_card_content_main_text {
+        font-size: 20px;
+    }
+    
+    .featured_project_card_content_secondary_text {
+        font-size: 16px;
+    }
+    
+    /* About Me */
+    .about_me {
+        padding: 40px 16px;
+        height: auto;
+    }
+    
+    .about_me_text {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .about_me_content {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    
+    .about_me_content_photo img {
+        max-width: 200px;
+        height: auto;
+        border-radius: 12px;
+    }
+    
+    .about_me_content_description {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .about_me_content_description_name,
+    .about_me_content_description_job_title {
+        font-size: 24px;
+    }
+    
+    .about_me_content_description_about {
+        font-size: 16px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .hero_left_column_main_text,
+    .hero_left_column_main_text_description {
+        font-size: 24px;
+    }
+    
+    .hero_left_column_description {
+        font-size: 14px;
+    }
+    
+    .technical_expertise_text,
+    .experience_text,
+    .main_contacts_text,
+    .featured_projects_main_text,
+    .about_me_text {
+        font-size: 24px;
+    }
+    
+    .technical_expertise_block,
+    .featured_project_card {
+        max-width: 100%;
+    }
+    
+    .header_inner_elements {
+        font-size: 12px;
+        padding: 2px 6px;
+    }
+    
+    .overlay_block {
+        width: 120px;
+        font-size: 11px;
+    }
 }
