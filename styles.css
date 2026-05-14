@@ -139,6 +139,13 @@ header {
     color: white;
     border: 0;
     border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.get_in_touch_button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 .view_work_button {
@@ -149,6 +156,15 @@ header {
     background-color: transparent;
     border: 1px solid #475569;
     border-radius: 8px;
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+}
+
+.view_work_button:hover {
+    transform: translateY(-2px);
+    background-color: #2563EB;
+    border-color: #2563EB;
+    color: white;
 }
 
 #topButton {
@@ -368,7 +384,12 @@ header {
     align-items: center;
     padding: 8px 14px;
     gap: 13px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
 
+.contact_button:hover {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 1px #2563EB;
 }
 
 footer {
